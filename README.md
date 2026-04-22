@@ -63,11 +63,10 @@ A correctly working implementation will show:
 ## File Structure
 ```
 .
-├── self_pruning_network.py    # Main implementation
-├── requirements.txt            # Python dependencies
 ├── README.md                   # This file
 ├── RESULTS.md                  # Generated after training
-└── gate_distribution_*.png     # Generated plots
+├── mask_distribution_lambda_*.png     # Generated plots
+└── self_pruning_casestudy.py    # Main implementation
 ```
 
 ## Implementation Details
