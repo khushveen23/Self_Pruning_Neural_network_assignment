@@ -2,7 +2,7 @@
 A neural network that autonomously eliminates unnecessary weights during the training process using learnable gate parameters.
 
 ## Overview
-This project builds a feed-forward neural network equipped with an internal self-pruning mechanism. Every weight in the network is paired with a "gate" parameter that the network trains alongside the weights — learning on its own whether each connection should stay active or get pruned away.
+This project builds a feed-forward neural network equipped with an internal self-pruning mechanism. Every weight in the network is paired with a "mask" parameter that the network trains alongside the weights — learning on its own whether each connection should stay active or get pruned away.
 
 ## Key Features
 - **PrunableLinear Layer**: A custom linear layer where each weight has its own trainable gate
@@ -18,7 +18,7 @@ pip install -r requirements.txt
 ## Usage
 Run the training script:
 ```bash
-python self_pruning_network.py
+python self_pruning_casestudy.py
 ```
 
 This will:
